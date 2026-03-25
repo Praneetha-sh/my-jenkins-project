@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // 1. CHANGE 'your-dockerhub-username' to your actual Docker Hub ID
-        DOCKER_IMAGE = "your-dockerhub-username/java-hello-world"
+        DOCKER_CREDENTIALS = 'Docker-credentials'
         // 2. This MUST match the ID you created in Jenkins Credentials "Safe"
         REGISTRY_CREDS = 'docker-hub-credentials'
     }
